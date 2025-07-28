@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name..." spellcheck="false" id="search-input">
+            <button id="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="weather-box">
+            <div class="weather-info">
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span id="city">City Name</span>
+                </div>
+                <div class="date" id="date">Date</div>
+            </div>
+
+            <div class="weather-details">
+                <div class="temperature">
+                    <span id="temp">--</span>°C
+                </div>
+                <div class="weather-description" id="description">Weather Description</div>
+                <div class="weather-icon">
+                    <i id="weather-icon" class="fas fa-cloud"></i>
+                </div>
+            </div>
+
+            <div class="weather-stats">
+                <div class="stat">
+                    <i class="fas fa-thermometer-half"></i>
+                    <div>
+                        <span class="label">Feels Like</span>
+                        <span class="value" id="feels-like">--°C</span>
+                    </div>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-tint"></i>
+                    <div>
+                        <span class="label">Humidity</span>
+                        <span class="value" id="humidity">--%</span>
+                    </div>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-wind"></i>
+                    <div>
+                        <span class="label">Wind Speed</span>
+                        <span class="value" id="wind-speed">-- km/h</span>
+                    </div>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-eye"></i>
+                    <div>
+                        <span class="label">Visibility</span>
+                        <span class="value" id="visibility">-- km</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-container" id="forecast-container">
+                    <!-- Forecast items will be added here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="error-message" id="error-message">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span>City not found. Please try again.</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
