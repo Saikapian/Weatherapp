@@ -15,6 +15,9 @@
             <button id="search-btn">
                 <i class="fas fa-search"></i>
             </button>
+            <button id="geo-btn" title="Use My Location">
+                <i class="fas fa-location-arrow"></i>
+            </button>
         </div>
 
         <div class="weather-box">
@@ -73,11 +76,22 @@
                     <!-- Forecast items will be added here -->
                 </div>
             </div>
+            <!-- Hourly forecast section -->
+            <div class="hourly-forecast">
+                <h3>Hourly Forecast</h3>
+                <div class="hourly-forecast-container" id="hourly-forecast-container">
+                    <!-- Hourly forecast items will be added here -->
+                </div>
+            </div>
         </div>
 
         <div class="error-message" id="error-message">
             <i class="fas fa-exclamation-triangle"></i>
             <span>City not found. Please try again.</span>
+        </div>
+        <!-- Favorite cities section -->
+        <div class="favorite-cities" id="favorite-cities">
+            <!-- Favorite cities will be listed here -->
         </div>
     </div>
 
